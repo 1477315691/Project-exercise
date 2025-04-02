@@ -13,7 +13,7 @@ namespace WindowsFormsApp2
         public static void FileChange()
         {
 
-            string filePath = "C:\\Users\\SSA-User\\Desktop\\ALT-AzureLoadTestingPlan\\P1\\PerfTestPlan.jmx";
+            string filePath = "C:\\Users\\User\\Desktop\\ALT-AzureLoadTestingPlan\\P1\\PerfTestPlan.jmx";
             string extractedValue = string.Empty;
             try
             {
@@ -49,8 +49,8 @@ namespace WindowsFormsApp2
             for (int j = 1; j <= 5; j++)
             {
                 //修改P文件
-                string filePath_1 = "C:\\Users\\SSA-User\\Desktop\\ALT-AzureLoadTestingPlan\\P" + j + "\\redis-stresstestitr111-9462.properties";
-                string filePath_2 = "C:\\Users\\SSA-User\\Desktop\\ALT-AzureLoadTestingPlan\\P" + j + "\\PerfTestPlan.jmx";
+                string filePath_1 = "C:\\Users\\User\\Desktop\\ALT-AzureLoadTestingPlan\\P" + j + "\\redis-stresstestitr111-9462.properties";
+                string filePath_2 = "C:\\Users\\User\\Desktop\\ALT-AzureLoadTestingPlan\\P" + j + "\\PerfTestPlan.jmx";
 
                 ReplaceInFile(filePath_1, oldValue, newValue);
                 ReplaceInFile(filePath_2, oldValue, newValue);
@@ -60,12 +60,12 @@ namespace WindowsFormsApp2
             {
                 ////修改B-C文件
                 ///"C:\Users\SSA-User\Desktop\ALT-AzureLoadTestingPlan\SC1\PerfTestPlan.jmx"
-                string filePath_1 = "C:\\Users\\SSA-User\\Desktop\\ALT-AzureLoadTestingPlan\\BC" + j + "\\redis-stresstestitr111-9462.properties";
-                string filePath_2 = "C:\\Users\\SSA-User\\Desktop\\ALT-AzureLoadTestingPlan\\BC" + j + "\\PerfTestPlan.jmx";
+                string filePath_1 = "C:\\Users\\User\\Desktop\\ALT-AzureLoadTestingPlan\\BC" + j + "\\redis-stresstestitr111-9462.properties";
+                string filePath_2 = "C:\\Users\\User\\Desktop\\ALT-AzureLoadTestingPlan\\BC" + j + "\\PerfTestPlan.jmx";
                 //修改S-C文件
                 //"C:\Users\SSA-User\Desktop\ALT-AzureLoadTestingPlan\BC0\PerfTestPlan.jmx"
-                string filePath_3 = "C:\\Users\\SSA-User\\Desktop\\ALT-AzureLoadTestingPlan\\SC" + j + "\\redis-stresstestitr111-9462.properties";
-                string filePath_4 = "C:\\Users\\SSA-User\\Desktop\\ALT-AzureLoadTestingPlan\\SC" + j + "\\PerfTestPlan.jmx";
+                string filePath_3 = "C:\\Users\\User\\Desktop\\ALT-AzureLoadTestingPlan\\SC" + j + "\\redis-stresstestitr111-9462.properties";
+                string filePath_4 = "C:\\Users\\User\\Desktop\\ALT-AzureLoadTestingPlan\\SC" + j + "\\PerfTestPlan.jmx";
 
                 ReplaceInFile(filePath_1, oldValue, newValue);
                 ReplaceInFile(filePath_2, oldValue, newValue);

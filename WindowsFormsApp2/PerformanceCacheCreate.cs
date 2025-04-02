@@ -38,6 +38,10 @@ namespace WindowsFormsApp2
 
                 Task<RedisResource> cache1 = RedisClient.CreateRedisResource("Verifyperformance-P" + i + "-EUS2E" + "-" + formattedDate, options1,
                 azureClient.Result.RedisCollection, false);
+
+
+                //Task<RedisResource> cache1 = RedisClient.CreateRedisResource("Verifyperformance-P" + i + "-EUS2E" + "-1220" , options1,
+                //azureClient.Result.RedisCollection, false);
             }
         }
         public async Task Case2()    //创建SCcache
@@ -57,6 +61,8 @@ namespace WindowsFormsApp2
                 MessageBox.Show(i.ToString());
                 Task<RedisResource> cache1 = RedisClient.CreateRedisResource("Verifyperformance-C" + i + "-EUS2E-Standard" + "-" + formattedDate, options1,
                 azureClient.Result.RedisCollection, false);
+                //                Task<RedisResource> cache1 = RedisClient.CreateRedisResource("Verifyperformance-C" + i + "-EUS2E-Standard" + "-1220" , options1,
+                //azureClient.Result.RedisCollection, false);
             }
 
         }
@@ -77,6 +83,8 @@ namespace WindowsFormsApp2
 
                 Task<RedisResource> cache1 = RedisClient.CreateRedisResource("Verifyperformance-C" + i + "-EUS2E-Basic" + "-" + formattedDate, options1,
                 azureClient.Result.RedisCollection, false);
+                //                Task<RedisResource> cache1 = RedisClient.CreateRedisResource("Verifyperformance-C" + i + "-EUS2E-Basic" + "-1220", options1,
+                //azureClient.Result.RedisCollection, false);
             }
 
         }

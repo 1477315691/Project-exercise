@@ -42,92 +42,99 @@
             // DateTittle
             // 
             this.DateTittle.AutoSize = true;
-            this.DateTittle.Location = new System.Drawing.Point(21, 32);
+            this.DateTittle.Location = new System.Drawing.Point(21, 35);
             this.DateTittle.Name = "DateTittle";
-            this.DateTittle.Size = new System.Drawing.Size(47, 12);
+            this.DateTittle.Size = new System.Drawing.Size(39, 13);
             this.DateTittle.TabIndex = 0;
             this.DateTittle.Text = "Date : ";
             // 
             // FileTtile
             // 
             this.FileTtile.AutoSize = true;
-            this.FileTtile.Location = new System.Drawing.Point(23, 92);
+            this.FileTtile.Location = new System.Drawing.Point(23, 100);
             this.FileTtile.Name = "FileTtile";
-            this.FileTtile.Size = new System.Drawing.Size(47, 12);
+            this.FileTtile.Size = new System.Drawing.Size(32, 13);
             this.FileTtile.TabIndex = 2;
             this.FileTtile.Text = "File : ";
             // 
             // FileBtn
             // 
-            this.FileBtn.Location = new System.Drawing.Point(76, 87);
+            this.FileBtn.BackColor = System.Drawing.SystemColors.Info;
+            this.FileBtn.Location = new System.Drawing.Point(76, 94);
             this.FileBtn.Name = "FileBtn";
-            this.FileBtn.Size = new System.Drawing.Size(302, 23);
+            this.FileBtn.Size = new System.Drawing.Size(302, 25);
             this.FileBtn.TabIndex = 3;
             this.FileBtn.Text = "click to add txt";
-            this.FileBtn.UseVisualStyleBackColor = true;
+            this.FileBtn.UseVisualStyleBackColor = false;
             this.FileBtn.Click += new System.EventHandler(this.FileBtn_Click);
             // 
             // PrintBtn
             // 
-            this.PrintBtn.Location = new System.Drawing.Point(163, 263);
+            this.PrintBtn.BackColor = System.Drawing.SystemColors.Info;
+            this.PrintBtn.Location = new System.Drawing.Point(163, 285);
             this.PrintBtn.Name = "PrintBtn";
-            this.PrintBtn.Size = new System.Drawing.Size(117, 21);
+            this.PrintBtn.Size = new System.Drawing.Size(117, 23);
             this.PrintBtn.TabIndex = 4;
             this.PrintBtn.Text = "print";
-            this.PrintBtn.UseVisualStyleBackColor = true;
+            this.PrintBtn.UseVisualStyleBackColor = false;
             this.PrintBtn.Click += new System.EventHandler(this.PrintBtn_Click);
             // 
             // GroupTitle
             // 
             this.GroupTitle.AutoSize = true;
-            this.GroupTitle.Location = new System.Drawing.Point(21, 151);
+            this.GroupTitle.Location = new System.Drawing.Point(21, 164);
             this.GroupTitle.Name = "GroupTitle";
-            this.GroupTitle.Size = new System.Drawing.Size(53, 12);
+            this.GroupTitle.Size = new System.Drawing.Size(45, 13);
             this.GroupTitle.TabIndex = 5;
             this.GroupTitle.Text = "Group : ";
             // 
             // groupText
             // 
-            this.groupText.Location = new System.Drawing.Point(76, 142);
+            this.groupText.BackColor = System.Drawing.SystemColors.Info;
+            this.groupText.Location = new System.Drawing.Point(76, 154);
             this.groupText.Name = "groupText";
-            this.groupText.Size = new System.Drawing.Size(302, 21);
+            this.groupText.Size = new System.Drawing.Size(302, 20);
             this.groupText.TabIndex = 6;
             // 
             // DateText
             // 
-            this.DateText.Location = new System.Drawing.Point(76, 29);
+            this.DateText.BackColor = System.Drawing.SystemColors.Info;
+            this.DateText.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.DateText.Location = new System.Drawing.Point(76, 35);
             this.DateText.Name = "DateText";
-            this.DateText.Size = new System.Drawing.Size(302, 21);
+            this.DateText.Size = new System.Drawing.Size(302, 20);
             this.DateText.TabIndex = 7;
             // 
             // comboBox1
             // 
+            this.comboBox1.BackColor = System.Drawing.SystemColors.Info;
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "1",
             "2",
             "3"});
-            this.comboBox1.Location = new System.Drawing.Point(76, 205);
+            this.comboBox1.Location = new System.Drawing.Point(76, 222);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 20);
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 8;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(21, 213);
+            this.label1.Location = new System.Drawing.Point(21, 231);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 12);
+            this.label1.Size = new System.Drawing.Size(34, 13);
             this.label1.TabIndex = 9;
             this.label1.Text = "Type:";
             // 
             // Performance_GetKey
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(442, 309);
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ClientSize = new System.Drawing.Size(477, 334);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.DateText);
@@ -137,6 +144,7 @@
             this.Controls.Add(this.FileBtn);
             this.Controls.Add(this.FileTtile);
             this.Controls.Add(this.DateTittle);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Name = "Performance_GetKey";
             this.Text = "GetKey";
             this.ResumeLayout(false);

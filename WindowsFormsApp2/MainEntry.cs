@@ -4,12 +4,14 @@ using System.Drawing;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp2.ChangeExcelfile;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WindowsFormsApp2
 {
     public partial class Form1 : Form
     {
+        private Form currentForm;
         public Form1()
         {
             InitializeComponent();
@@ -110,6 +112,32 @@ namespace WindowsFormsApp2
             this.Hide();
             performanceFile_Modification.ShowDialog();
             this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("正在插入，请稍等！");
+            ChangeFile changeFile = new ChangeFile();
+            changeFile.ProcessFile();
+            FormOutput formOutput = new FormOutput(changeFile.OutputData);
+            //formOutput.Show();
+            OpenForm(formOutput);
+        }
+        public void OpenForm(Form newForm)
+        {
+            // 关闭当前页面
+            if (currentForm != null)
+            {
+                currentForm.Close();
+            }
+
+            // 设置新页面的位置为当前页面的位置
+            newForm.StartPosition = FormStartPosition.Manual;
+            newForm.Location = this.Location;
+
+            // 显示新页面
+            newForm.Show();
+            currentForm = newForm;
         }
     }
 }

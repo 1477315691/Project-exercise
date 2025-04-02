@@ -39,8 +39,8 @@ namespace WindowsFormsApp2
         }
         public async Task GetKeysAsync()
         {
-            //string group = this.groupText.Text;
-            string group = "Cache-FunctionalRun-neverdeletedPatching";
+            string group = this.groupText.Text;
+            //string group = "Manualtest-group";
             AzureClient azureClient = await AzureClient.InitializeAzureClientAsync(new AzureLocation("centraluseuap"), group);
             RedisCollection cachecollection = azureClient.RedisCollection;
             AsyncPageable<RedisResource> redisResourcesAsyncPageable = cachecollection.GetAllAsync();
